@@ -23,8 +23,11 @@ From our data, we can see that rates of Hidden Hypoxemia are higher for people w
 ![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/07c8aba1-953b-4dc2-8baa-98aa485cb1ba)
 
 # Model and Data Details
-Our models are built using XGBoost. Our regression model builds a gradient boosted forest using the XGBRegressor class, and our classifier builds an ensemble of gradient boosted forests using the XGBClassifier class. 
-The data starts with some erroneous SpO2 and SaO2, and some of the features have NaN entries. We clean our data by removing the erroneous data and using Scikit-Learns IterativeImputer to impute the NaN entries. 
+Our models are built using XGBoost. The data starts with some erroneous SpO2 and SaO2, and some of the features have NaN entries. We clean our data by removing the erroneous data and using Scikit-Learns IterativeImputer to impute the NaN entries. 
+
+For the SaO2 Regression Model, we logit-transformed SpO2 and SaO2 values to normalize values for a better regression fit. The dataset has a highly skewed distribution with most SaO2 and SpO2 values lying close to the upper measurement boundary of 100, making naïve regression ineffective as well. Our model can predict SaO2 with a RMSE of 4.7, in original SaO2 units.
+For the HH Classification Model, we used an ensemble of gradient boosted forest classifiers created using XGBoost. The ensemble is trained on random undersampling of the dataset in order to artificially boost the prevalence of hidden hypoxemia as only 2% of the dataset had HH.
+
 
 # Dependencies
 Running the code requires the following Python packages: XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
