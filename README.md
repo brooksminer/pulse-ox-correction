@@ -20,6 +20,7 @@ Our test results show that our classification model is able to accurately predic
 
 # Evidence of Racial Bias
 From our data, we can see that rates of Hidden Hypoxemia are higher for people who are not White. 
+![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/07c8aba1-953b-4dc2-8baa-98aa485cb1ba)
 
 # Model and Data Details
 Our models are built using XGBoost. Our regression model builds a gradient boosted forest using the XGBRegressor class, and our classifier builds an ensemble of gradient boosted forests using the XGBClassifier class. 
