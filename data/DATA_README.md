@@ -1,4 +1,4 @@
-# Important note about data access.
+# Important note about data access
 The data for this project is a restricted-access resource due to the confidentiality of patient health records.
 Individuals who would like to access the data can follow steps to become an approved user here (scroll down to the bottom header, 'Files'):
 https://physionet.org/content/mit-critical-datathon-2023/1.0.0/
