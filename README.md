@@ -10,7 +10,7 @@ Team Members:
 
 # Project Description
 
-Inequity in the quality of healthcare based on your social identity, such as your race or gender, is a long-standing issue in medicine. While this issue is recently starting to receive some well deserved attention, there is still a long way to go. One manifestation of this problem is the innacuracies in blood oxygen measurements in people of color when using a pulse oxymeter. As stated by the PhysioNet team at MIT[[1]](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/):
+Inequity in the quality of healthcare based on your social identity, such as your race or gender, is a long-standing issue in medicine. While this issue is recently starting to receive some well deserved attention, there is still a long way to go. One manifestation of this problem is the innacuracies in blood oxygen measurements in people of color when using a pulse oxymeter. As stated by the PhysioNet team[[1]](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/):
 
 >Pulse oximeters are medical devices used to assess peripheral arterial oxygen saturation $(SpO2)$ noninvasively. In contrast, the "gold standard" requires arterial blood to be drawn to measure the arterial oxygen saturation $(SaO2)$. Pulse oximetry inaccuracies can fail to detect episodes of hidden hypoxemia, i.e., low SaO2 with high SpO2. Hidden hypoxemias can result in less treatment and increased mortality. Yet flawed, pulse oximeters remain ubiquitously used because of their ease of use; debiasing the underlying algorithms could alleviate the downstream repercussions of hidden hypoxemia.
 
