@@ -1,0 +1,139 @@
+﻿name,type,description,blood_draw,additional_notes
+subject_id,int64,Unique identifier for each patient,0,NULL
+stay_id,int64,Unique identifier for each hospital stay,0,NULL
+SaO2_timestamp,object,Timestamp for SaO2 measurement,1,NULL
+SaO2,float64,Arterial oxygen saturation,1,NULL
+delta_SpO2,int64,Time offset (in minutes) in the measurement of peripheral oxygen saturation,0,NULL
+SpO2,int64,Peripheral oxygen saturation,0,NULL
+hidden_hypoxemia,int64,Indicates if the patient had hypoxemia without clinical signs,1,NULL
+hadm_id,int64,Unique identifier for each hospital admission,0,NULL
+gender,object,Gender of the patient,0,NULL
+sex_female,int64,Indicates if the patient is female,0,NULL
+anchor_age,int64,Age of the patient at the time of admission,0,NULL
+race,object,Race of the patient,0,NULL
+race_group,object,Grouping of race into broader categories,0,NULL
+language,object,Primary language spoken by the patient,0,NULL
+insurance,object,Type of insurance of the patient,0,NULL
+weight,float64,Weight of the patient in kilograms,0,NULL
+height,float64,Height of the patient in centimeters,0,NULL
+BMI,float64,Body Mass Index of the patient,0,NULL
+anchor_year_group,object,Grouping of admission year into broader categories,0,NULL
+first_hosp_stay,bool,Indicates if this is the first hospital stay for the patient,0,NULL
+first_icu_stay,bool,Indicates if this is the first ICU stay for the patient,0,NULL
+icustay_seq,int64,Sequence number of ICU stay for the patient,0,NULL
+admittime,object,Timestamp for hospital admission,0,NULL
+dischtime,object,Timestamp for hospital discharge,0,NULL
+icu_intime,object,Timestamp for ICU admission,0,NULL
+icu_outtime,object,Timestamp for ICU discharge,0,NULL
+los_hospital,int64,Length of hospital stay in days,0,NULL
+los_icu,float64,Length of ICU stay in days,0,NULL
+CCI,int64,Charlson Comorbidity Index,1,predicts 10-year survival in patients with multiple comorbidities
+SOFA_admission,int64,Sequential Organ Failure Assessment (SOFA) score at admission,1,predicts ICU mortality based on lab results and clinical data
+mortality_in,int64,Indicates if the patient died during the hospital stay,0,NULL
+delta_vent_start,float64,Time since ventilation started (in minutes) at the time of the measurement,0,NULL
+ventilation_status,object,Indicates if the patient was on mechanical ventilation,0,NULL
+invasive_vent,int64,Indicates if the patient was on invasive mechanical ventilation,0,NULL
+delta_FiO2,float64,Time offset (in minutes) in the measurement of inspired oxygen (FiO2),0,an estimation of the oxygen content a person inhales
+FiO2,float64,Fraction of inspired oxygen,0,an estimation of the oxygen content a person inhales
+delta_rrt,float64,Time since renal replacement therapy (in minutes) at the time of the measurement,0,"dialysis, hemofiltration, and hemodiafiltration"
+rrt,int64,Indicates if the patient was on renal replacement therapy,0,"dialysis, hemofiltration, and hemodiafiltration"
+delta_vp_start,float64,Time since vasopressor therapy started (in minutes) at the time of the measurement,0,raise your blood pressure when it’s so low that you can’t get enough blood to your organs
+norepinephrine_equivalent_dose,float64,Dose of norepinephrine equivalent to other vasopressors (in mcg/kg/min),0,raise your blood pressure when it’s so low that you can’t get enough blood to your organs
+delta_sofa_coag,float64,Time offset (in minutes) in the measurement of SOFA score for coagulation from the previous measurement,1,Platelets (×103/µl)
+sofa_coag,float64,SOFA score for coagulation,1,Platelets (×103/µl)
+delta_sofa_liver,float64,Time offset (in minutes) in the measurement of SOFA score for liver from the previous measurement,1,Bilirubin (mg/dl) [µmol/L])
+sofa_liver,float64,SOFA score for liver,1,Bilirubin (mg/dl) [µmol/L])
+delta_sofa_cv,int64,Time offset (in minutes) in the measurement of SOFA score for cardiovascular from the previous measurement,0,Mean arterial pressure OR administration of vasopressors required
+sofa_cv,int64,Cardiovascular component of Sequential Organ Failure Assessment (SOFA) score,0,Mean arterial pressure OR administration of vasopressors required
+delta_sofa_cns,float64,Time offset (in minutes) in the measurement of central nervous system component of SOFA,0,"Glasgow Coma Scale is a clinical scale used to reliably measure a person""s level of consciousness after a brain injury"
+sofa_cns,float64,Central nervous system component of SOFA score,0,"Glasgow Coma Scale is a clinical scale used to reliably measure a person""s level of consciousness after a brain injury"
+delta_sofa_renal,float64,Time difference between the SaO2 measurement and the timestamp of the SaO2 measurement,1,Creatinine (mg/dl) [µmol/L]
+sofa_renal,float64,Renal component of SOFA score,1,Creatinine (mg/dl) [µmol/L]
+delta_sofa_resp,float64,Time offset (in minutes) in the measurement of respiratory component of SOFA,1,PaO2/FiO2 [mmHg (kPa)]
+sofa_resp,float64,Respiratory component of SOFA score,1,PaO2/FiO2 [mmHg (kPa)]
+delta_hemoglobin,float64,Time offset (in minutes) in the measurement of hemoglobin level,1,"protein in your red blood cells that carries oxygen to your body""s organs"
+hemoglobin,float64,Hemoglobin level,1,"protein in your red blood cells that carries oxygen to your body""s organs"
+delta_hematocrit,float64,Time offset (in minutes) in the measurement of Change in hematocrit level,1,percentage by volume of red cells in your blood
+hematocrit,float64,Hematocrit level,1,percentage by volume of red cells in your blood
+delta_mch,float64,Time offset (in minutes) in the measurement of mean corpuscular hemoglobin,1,measurement of the average amount of hemoglobin in each red blood cell
+mch,float64,Mean corpuscular hemoglobin,1,measurement of the average amount of hemoglobin in each red blood cell
+delta_mchc,float64,Time offset (in minutes) in the measurement of mean corpuscular hemoglobin concentration,1,concentration of hemoglobin in red blood cells
+mchc,float64,Mean corpuscular hemoglobin concentration,1,concentration of hemoglobin in red blood cells
+delta_mcv,float64,Time offset (in minutes) in the measurement of mean corpuscular volume,1,average size of your red blood cells
+mcv,float64,Mean corpuscular volume,1,average size of your red blood cells
+delta_platelet,float64,Time offset (in minutes) in the measurement of platelet count,1,prevent and stop bleeding
+platelet,float64,Platelet count,1,prevent and stop bleeding
+delta_rbc,float64,Time offset (in minutes) in the measurement of red blood cell count,1,principal means of delivering oxygen to the body tissues
+rbc,float64,Red blood cell count,1,principal means of delivering oxygen to the body tissues
+delta_rdw,float64,Time offset (in minutes) in the measurement of Change in red cell distribution width,1,describes the variation in the sizes of red blood cells
+rdw,float64,Red cell distribution width,1,describes the variation in the sizes of red blood cells
+delta_wbc,float64,Time offset (in minutes) in the measurement of white blood cell count,1,help the body fight infection and other diseases
+wbc,float64,White blood cell count,1,help the body fight infection and other diseases
+delta_d_dimer,float64,Time offset (in minutes) in the measurement of Change in D-dimer,1,small protein fragment present in the blood after a blood clot is degraded by fibrinolysis
+d_dimer,float64,D-dimer level,1,small protein fragment present in the blood after a blood clot is degraded by fibrinolysis
+delta_fibrinogen,float64,Time offset (in minutes) in the measurement of fibrinogen level,1,a protein made in the liver that circulates in the blood
+fibrinogen,float64,Fibrinogen level,1,a protein made in the liver that circulates in the blood
+delta_thrombin,float64,Time offset (in minutes) in the measurement of thrombin time,1,"measures the time it takes for a clot to form in the plasma of a blood sample containing anticoagulant, after an excess of thrombin has been added"
+thrombin,float64,Thrombin time,1,"measures the time it takes for a clot to form in the plasma of a blood sample containing anticoagulant, after an excess of thrombin has been added"
+delta_inr,float64,Time offset (in minutes) in the measurement of Change in international normalized ratio (INR),1,tells you how long it takes for your blood to clot
+inr,float64,International normalized ratio (INR),1,tells you how long it takes for your blood to clot
+delta_pt,float64,Time offset (in minutes) in the measurement of prothrombin time (PT),1,measures how long it takes for a clot to form in a blood sample
+pt,float64,Prothrombin time (PT),1,measures how long it takes for a clot to form in a blood sample
+delta_ptt,float64,Time offset (in minutes) in the measurement of partial thromboplastin time (PTT),1,blood test that looks at how long it takes for blood to clot
+ptt,float64,Partial thromboplastin time (PTT),1,blood test that looks at how long it takes for blood to clot
+delta_alt,float64,Time offset (in minutes) in the measurement of alanine transaminase (ALT) level,1,High levels of ALT in your blood may indicate that you have damage to your liver and/or a liver condition
+alt,float64,Alanine transaminase (ALT) level,1,High levels of ALT in your blood may indicate that you have damage to your liver and/or a liver condition
+delta_alp,float64,Time offset (in minutes) in the measurement of hhange in alkaline phosphatase (ALP) level,1,High alkaline phosphatase (ALP) levels may be a sign of a liver problem or a bone disorder
+alp,float64,Alkaline phosphatase (ALP) level,1,High alkaline phosphatase (ALP) levels may be a sign of a liver problem or a bone disorder
+delta_ast,float64,Time offset (in minutes) in the measurement of aspartate transaminase (AST) level,1,"High levels of AST in the blood may be a sign of hepatitis, cirrhosis, mononucleosis, or other liver diseases"
+ast,float64,Aspartate transaminase (AST) level,1,"High levels of AST in the blood may be a sign of hepatitis, cirrhosis, mononucleosis, or other liver diseases"
+delta_bilirubin_total,float64,Time offset (in minutes) in the measurement of total bilirubin level,1,Higher than usual levels of bilirubin may indicate different types of liver or bile duct problems
+bilirubin_total,float64,Total bilirubin level,1,Higher than usual levels of bilirubin may indicate different types of liver or bile duct problems
+delta_bilirubin_direct,float64,Time offset (in minutes) in the measurement of  direct bilirubin level,1,This is the bilirubin once it reaches the liver and undergoes a chemical change
+bilirubin_direct,float64,Direct bilirubin level,1,This is the bilirubin once it reaches the liver and undergoes a chemical change
+delta_bilirubin_indirect,float64,Time offset (in minutes) in the measurement of indirect bilirubin level,1,This is the bilirubin created from red blood cell breakdown
+bilirubin_indirect,float64,Indirect bilirubin level,1,This is the bilirubin created from red blood cell breakdown
+delta_ck_cpk,float64,Time offset (in minutes) in the measurement of  creatine kinase (CPK) level,1,"If your results show you have a higher than normal level of CK, it may mean you have an injury or disease of the muscles, heart, or brain"
+ck_cpk,float64,Creatine kinase (CPK) level,1,"If your results show you have a higher than normal level of CK, it may mean you have an injury or disease of the muscles, heart, or brain"
+delta_ck_mb,float64,Time offset (in minutes) in the measurement of  creatine kinase MB (CK-MB) level,1,"If your results show you have a higher than normal level of CK, it may mean you have an injury or disease of the muscles, heart, or brain"
+ck_mb,float64,Creatine kinase MB (CK-MB) level,1,"If your results show you have a higher than normal level of CK, it may mean you have an injury or disease of the muscles, heart, or brain"
+delta_ggt,float64,Time offset (in minutes) in the measurement of  gamma-glutamyl transferase (GGT) level,1,"If your results show higher than normal levels of GGT, it may be a sign of liver damage"
+ggt,float64,Gamma-glutamyl transferase (GGT) level,1,"If your results show higher than normal levels of GGT, it may be a sign of liver damage"
+delta_ld_ldh,float64,Time offset (in minutes) in the measurement of  lactate dehydrogenase (LDH) level,1,Higher than normal LDH levels usually means you have some type of tissue damage or disease
+ld_ldh,float64,Lactate dehydrogenase (LDH) level,1,Higher than normal LDH levels usually means you have some type of tissue damage or disease
+delta_albumin,float64,Time offset (in minutes) in the measurement of albumin level,1,Low albumin levels can be a sign of liver or kidney disease or another medical condition. High levels may be a sign of dehydration.
+albumin,float64,Albumin level,1,Low albumin levels can be a sign of liver or kidney disease or another medical condition. High levels may be a sign of dehydration.
+delta_aniongap,float64,Time offset (in minutes) in the measurement of anion gap,1,"measures the difference—or gap—between the negatively charged and positively charged electrolytes in your blood. If the anion gap is too high, your blood is more acidic than normal. If the anion gap is too low, your blood isn""t acidic enough."
+aniongap,float64,Anion gap,1,"measures the difference—or gap—between the negatively charged and positively charged electrolytes in your blood. If the anion gap is too high, your blood is more acidic than normal. If the anion gap is too low, your blood isn""t acidic enough."
+delta_bicarbonate,float64,Time offset (in minutes) in the measurement of bicarbonate level,1,measures the total amount of carbon dioxide (CO2) in the blood
+bicarbonate,float64,Bicarbonate level,1,measures the total amount of carbon dioxide (CO2) in the blood
+delta_bun,float64,Time offset (in minutes) in the measurement of blood urea nitrogen (BUN) level,1,a high level of blood urea nitrogen is a sign that your kidneys are not working well
+bun,float64,Blood urea nitrogen (BUN) level,1,a high level of blood urea nitrogen is a sign that your kidneys are not working well
+delta_calcium,float64,Time offset (in minutes) in the measurement of calcium level,1,"used to help diagnose or monitor many types of medical conditions, including conditions that affect your bones, kidneys, digestive system, thyroid, and parathyroid glands"
+calcium,float64,Calcium level,1,"used to help diagnose or monitor many types of medical conditions, including conditions that affect your bones, kidneys, digestive system, thyroid, and parathyroid glands"
+delta_chloride,float64,Time offset (in minutes) in the measurement of chloride level,1,"Chloride is often measured with other electrolytes to diagnose or monitor conditions, such as kidney disease, heart failure, liver disease, and high blood pressure"
+chloride,float64,Chloride level,1,"Chloride is often measured with other electrolytes to diagnose or monitor conditions, such as kidney disease, heart failure, liver disease, and high blood pressure"
+delta_creatinine,float64,Time offset (in minutes) in the measurement of creatinine level,1,"If blood and/or urine creatinine levels are not normal, it can be a sign of kidney disease"
+creatinine,float64,Creatinine level,1,"If blood and/or urine creatinine levels are not normal, it can be a sign of kidney disease"
+delta_glucose_lab,float64,Time offset (in minutes) in the measurement of glucose level from laboratory,1,NULL
+glucose_lab,float64,Glucose level from laboratory measurement,1,NULL
+delta_sodium,float64,Time offset (in minutes) in the measurement of sodium level,1,"If your sodium blood levels are too high or too low, it may mean that you have a kidney problem, dehydration, or another type of medical condition"
+sodium,float64,Sodium level,1,"If your sodium blood levels are too high or too low, it may mean that you have a kidney problem, dehydration, or another type of medical condition"
+delta_potassium,float64,Time offset (in minutes) in the measurement of potassium level,1,"abnormal levels could be signs of include kidney disease, high blood pressure, and heart disease."
+potassium,float64,Potassium level,1,"abnormal levels could be signs of include kidney disease, high blood pressure, and heart disease."
+delta_ph,float64,Time offset (in minutes) in the measurement of pH level,1,NULL
+ph,float64,pH level,1,NULL
+delta_lactate,float64,Time offset (in minutes) in the measurement of lactate level,1,Lactic acid levels rise when oxygen levels decrease
+lactate,float64,Lactate level,1,Lactic acid levels rise when oxygen levels decrease
+delta_heart_rate,int64,Time offset (in minutes) in the measurement of  heart rate,0,NULL
+heart_rate,float64,Heart rate,0,NULL
+delta_mbp,int64,Time offset (in minutes) in the measurement of mean blood pressure (MBP),0,NULL
+mbp,float64,Mean blood pressure (MBP),0,NULL
+delta_resp_rate,float64,Time offset (in minutes) in the measurement of respiratory rate,0,NULL
+resp_rate,float64,Respiratory rate,0,NULL
+delta_temperature,float64,Time offset (in minutes) in the measurement of body temperature,0,NULL
+temperature,float64,Body temperature,0,NULL
+delta_glucose,float64,Time offset (in minutes) in the measurement of glucose level,1,NULL
+glucose,float64,Glucose level,1,NULL
+delta_heart_rhythm,float64,Time offset (in minutes) in the measurement of heart rhythm,0,NULL
+heart_rhythm,object,Heart rhythm,0,NULL
