@@ -28,7 +28,7 @@ Our models are built using XGBoost. The data starts with some erroneous SpO2 and
 For the SaO2 Regression Model, we logit-transformed SpO2 and SaO2 values to normalize values for a better regression fit. The dataset has a highly skewed distribution with most SaO2 and SpO2 values lying close to the upper measurement boundary of 100, making naïve regression ineffective as well. Our model can predict SaO2 with a RMSE of 4.7, in original SaO2 units.
 For the HH Classification Model, we used an ensemble of gradient boosted forest classifiers created using XGBoost. The ensemble is trained on random undersampling of the dataset in order to artificially boost the prevalence of hidden hypoxemia as only 2% of the dataset had HH.
 Pipeline for the Classification Model:
-![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/cf7c6ecc-db0e-495a-9159-8226a5eb351f)
+![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/23613069-9ae7-4752-a936-fc221c36c84a)
 
 
 
