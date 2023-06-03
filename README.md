@@ -19,7 +19,7 @@ We tackle this problem by developing two models, one to predict $SaO2$ and one t
 Our test results show that our classification model is able to accurately predict which individuals are likely to have Hypoxemia despite SpO2 measurements that say otherwise. Our regression model was also able to provide a significantly better estimate of blood oxygenation, outperforming the current medical standard by 30% for patients with hypoxemia .<br>
 
 # Evidence of Racial Bias
-From our data, we can see that rates of Hidden Hypoxemia are higher for people who are not White. 
+From our data, we can see that rates of Hidden Hypoxemia are higher for people of color.
 ![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/07c8aba1-953b-4dc2-8baa-98aa485cb1ba)
 
 # Model and Data Details
