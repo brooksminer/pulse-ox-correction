@@ -25,7 +25,7 @@ From our data, we can see that rates of Hidden Hypoxemia are higher for people o
 # Model and Data Details
 Our models are built using XGBoost. The data starts with some erroneous SpO2 and SaO2, and some of the features have NaN entries. We clean our data by removing the erroneous data and using Scikit-Learns IterativeImputer to impute the NaN entries. <br>
 
-For the SaO2 Regression Model, we logit-transformed SpO2 and SaO2 values to normalize values for a better regression fit. The dataset has a highly skewed distribution with most SaO2 and SpO2 values lying close to the upper measurement boundary of 100, making naïve regression ineffective as well. Our model provides estimates that are 30% closer to the actual blood oxygenation for patients with hypoxemia than the current medical standard. <br>
+For the SaO2 Regression Model, we logit-transformed SpO2 and SaO2 values to normalize values for a better regression fit. The dataset has a highly skewed distribution with most SaO2 and SpO2 values lying close to the upper measurement boundary of 100, making naïve regression ineffective. Our model provides estimates that are 30% closer to the actual blood oxygenation for patients with hypoxemia than the current medical standard of only using pulse oximetry measures. <br>
 
 Hidden hypoxemia is a rare event, accounting for only 1.6% of the patients in our dataset. Building a classifier that accurately finds these patients without overestimating their prevalence is difficult. For the HH Classification Model, we used an ensemble of gradient boosted forest classifiers created using XGBoost. The ensemble is trained on random undersamplings of the dataset in order to counter the imbalance in classes and artificially boost the prevalence of hidden hypoxemia in training.
 
@@ -40,7 +40,7 @@ Running the code requires the following Python packages:
 ```
 XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
 ```
-# Interfacing with Models and Data Analysis
+# Interfacing with Models and Data Analyses
 Exploratory data analysis is located in EDA folder, in the `EDA_Oximetry_Data_MIMIC-IV.ipynb` notebook. The notebook for creating the classifier can be found under Notebooks in `Classifier_Undersampling.ipynb`. The Regression Model can be generated using the `SaO2_Regression_Model.ipynb` file under the Notebooks folder. 
 
 # Data Usage
