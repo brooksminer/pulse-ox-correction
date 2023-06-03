@@ -2,11 +2,11 @@
 Erdős Institute Data Science Boot Camp Spring 2023
 
 Team Members:
-- Brooks Miner
-- Jaychandran Padayasi
-- Rohan Myers
-- Saad Khalid
-- Woojeong Kim
+- [Brooks Miner](https://www.linkedin.com/in/brooks-miner/)
+- [Jaychandran Padayasi](https://www.linkedin.com/in/jaychandran-padayasi/)
+- [Rohan Myers](https://www.linkedin.com/in/rohanmyers/)
+- [Saad Khalid](https://www.linkedin.com/in/saad-khalid-9b31b3125/)
+- [Woojeong Kim](https://math.indiana.edu/about/graduate-students/Kim-Woojeong.html)
 
 # Project Description
 
