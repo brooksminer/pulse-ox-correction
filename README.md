@@ -1,4 +1,4 @@
-# Correcting Bias in Pulse Oximeter Measurements of Blood Oxygen 
+# Correcting Racial Bias in Pulse Oximeter Measurements of Blood Oxygen Saturation
 Erdős Institute Data Science Boot Camp Spring 2023
 
 Team Members:
