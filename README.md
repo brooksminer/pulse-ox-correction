@@ -16,7 +16,7 @@ Inequity in the quality of healthcare based on your social identity, such as you
 
 We tackle this problem by developing two models, one to predict $SaO2$ and one to predict Hidden Hypoxemia, using features that do not require a blood draw. Our model is trained on a publicly available dataset of de-identified medical records from 50,000 unique patients at Beth Israel Deaconess Medical Center in Boston, MA, between 2008 - 2019.<br>
 
-Our test results show that our classification model is able to accurately predict which individuals are likely to have Hypoxemia despite SpO2 measurements that say otherwise. Our regression model was also able to provide a significantly better estimate of blood oxygenation, outperforming the current medical standard by 30% for patients with hypoxemia .<br>
+Our test results show that our classification model is able to accurately predict which individuals are likely to have Hypoxemia despite SpO2 measurements that say otherwise. Our regression model was also able to provide a significantly better estimate of blood oxygenation, outperforming the current medical standard by 30% for patients with hypoxemia.<br>
 
 # Evidence of Racial Bias
 From our data, we can see that rates of Hidden Hypoxemia are higher for people of color.
