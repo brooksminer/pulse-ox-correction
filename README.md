@@ -36,8 +36,10 @@ Pipeline for the Classification Model:<br>
 
 
 # Dependencies
-Running the code requires the following Python packages: XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
-
+Running the code requires the following Python packages: 
+```
+XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
+```
 # Interfacing with Models and Data Analysis
 The Data Analysis can be found in the EDA folder, in the EDA_ForShow notebook. The notebook for creating the classifier can be found under Notebooks in Classifier_Undersampling.ipynb. The Regression Model can be generated using the SaO2_Regression_Model.ipynb file under the Notebooks folder. 
 
