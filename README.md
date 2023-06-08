@@ -2,7 +2,6 @@
 [Erdős Institute](https://www.erdosinstitute.org/) [Data Science Boot Camp](https://www.erdosinstitute.org/programs/spring-2023/data-science-boot-camp), Spring 2023
 
 🎉 **Awarded 🏆1st place🏆 among 33 projects by a panel of data science professionals**
-
 - View our [5-minute recorded presentation](https://www.erdosinstitute.org/project-database/spring-2023/data-science-boot-camp/correcting-racial-bias-in-measurement-of-blood-oxygen-saturation)
 
 ## Team Members:
