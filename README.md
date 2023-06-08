@@ -9,7 +9,7 @@
 - [Jaychandran Padayasi](https://www.linkedin.com/in/jaychandran-padayasi/)
 - [Rohan Myers](https://www.linkedin.com/in/rohanmyers/)
 - [Saad Khalid](https://www.linkedin.com/in/saad-khalid-9b31b3125/)
-- [Woojeong Kim](https://math.indiana.edu/about/graduate-students/Kim-Woojeong.html)
+- [Woojeong Kim](https://www.linkedin.com/in/woojeongkim1123/)
 
 # Project Description
 
