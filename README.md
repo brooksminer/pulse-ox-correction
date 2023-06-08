@@ -1,7 +1,7 @@
 # Correcting Racial Bias in Pulse Oximeter Measurements of Blood Oxygen Saturation
 Erdős Institute Data Science Boot Camp Spring 2023
 
-**Awarded 1st place among 33 projects by a panel of data science professionals**
+## Awarded 1st place among 33 projects by a panel of data science professionals
 
 Team Members:
 - [Brooks Miner](https://www.linkedin.com/in/brooks-miner/)
