@@ -3,7 +3,7 @@
 
 🎉 **Awarded 🏆1st place🏆 among 33 projects by a panel of data science professionals**
 
-View our [5-minute recorded presentation](https://www.erdosinstitute.org/project-database/spring-2023/data-science-boot-camp/correcting-racial-bias-in-measurement-of-blood-oxygen-saturation).
+- View our [5-minute recorded presentation](https://www.erdosinstitute.org/project-database/spring-2023/data-science-boot-camp/correcting-racial-bias-in-measurement-of-blood-oxygen-saturation)
 
 ## Team Members:
 - [Brooks Miner](https://www.linkedin.com/in/brooks-miner/)
