@@ -1,11 +1,11 @@
 # Correcting Racial Bias in Pulse Oximeter Measurements of Blood Oxygen Saturation
 [Erdős Institute](https://www.erdosinstitute.org/) [Data Science Boot Camp](https://www.erdosinstitute.org/programs/spring-2023/data-science-boot-camp), Spring 2023
 
-View our [5-minute recorded presentation](https://www.erdosinstitute.org/project-database/spring-2023/data-science-boot-camp/correcting-racial-bias-in-measurement-of-blood-oxygen-saturation).
-
 🎉 **Awarded 🏆1st place🏆 among 33 projects by a panel of data science professionals**
 
-Team Members:
+View our [5-minute recorded presentation](https://www.erdosinstitute.org/project-database/spring-2023/data-science-boot-camp/correcting-racial-bias-in-measurement-of-blood-oxygen-saturation).
+
+## Team Members:
 - [Brooks Miner](https://www.linkedin.com/in/brooks-miner/)
 - [Jaychandran Padayasi](https://www.linkedin.com/in/jaychandran-padayasi/)
 - [Rohan Myers](https://www.linkedin.com/in/rohanmyers/)
