@@ -14,13 +14,13 @@ View our [5-minute recorded presentation](https://www.erdosinstitute.org/project
 
 # Project Description
 
-Inequity in the quality of healthcare based on your social identity, such as your race or gender, is a long-standing issue in medicine. While this issue is recently starting to receive some well deserved attention, there is still a long way to go. One manifestation of this problem is the innacuracies in blood oxygen measurements in people of color when using a pulse oxymeter. As stated by the PhysioNet team[[1]](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/):
+Inequity in the quality of healthcare based on social identity, such as your race or gender, is a long-standing issue in medicine. While this issue has increasingly received well-deserved attention, there is still a long way to go. One manifestation of this problem is the innacuracies in blood oxygen measurements in people of color when using a pulse oximeter. As stated by the PhysioNet team[[1]](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/):
 
 >Pulse oximeters are medical devices used to assess peripheral arterial oxygen saturation $(SpO2)$ noninvasively. In contrast, the "gold standard" requires arterial blood to be drawn to measure the arterial oxygen saturation $(SaO2)$. Pulse oximetry inaccuracies can fail to detect episodes of hidden hypoxemia, i.e., low SaO2 with high SpO2. Hidden hypoxemias can result in less treatment and increased mortality. Yet flawed, pulse oximeters remain ubiquitously used because of their ease of use; debiasing the underlying algorithms could alleviate the downstream repercussions of hidden hypoxemia.<br>
 
-We tackle this problem by developing two models, one to predict $SaO2$ and one to predict Hidden Hypoxemia, using features that do not require a blood draw. Our model is trained on a publicly available dataset of de-identified medical records from 50,000 unique patients at Beth Israel Deaconess Medical Center in Boston, MA, between 2008 - 2019.<br>
+We tackle this problem by developing two models, one to predict $SaO2$ and one to predict Hidden Hypoxemia, using features that do not require a blood draw. Our model is trained on a publicly available dataset of de-identified medical records from ≈80,000 patient records at Beth Israel Deaconess Medical Center in Boston, MA, between 2008 - 2019.<br>
 
-Our test results show that our classification model is able to accurately predict which individuals are likely to have Hypoxemia despite SpO2 measurements that say otherwise. Our regression model was also able to provide a significantly better estimate of blood oxygenation, outperforming the current medical standard by 30% for patients with hypoxemia.<br>
+Our classification model is able to correctly predict which individuals have hidden hypoxemia in 7 out of 10 cases in our test dataset. Our regression model to predict artieral blook oxygen saturation ($SaO2$) was also able to provide a better estimate of blood oxygenation, outperforming the current medical standard (oximeter reading alone) by 30% for patients with hypoxemia.<br>
 
 # Evidence of Racial Bias
 From our data, we can see that rates of Hidden Hypoxemia are higher for people of color.
