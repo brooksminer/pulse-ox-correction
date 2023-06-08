@@ -33,10 +33,8 @@ For the SaO2 Regression Model, we logit-transformed SpO2 and SaO2 values to norm
 
 Hidden hypoxemia is a rare event, accounting for only 1.6% of the patients in our dataset. Building a classifier that accurately finds these patients without overestimating their prevalence is difficult. For the HH Classification Model, we used an ensemble of gradient boosted forest classifiers created using XGBoost. The ensemble is trained on random undersamplings of the dataset in order to counter the imbalance in classes and artificially boost the prevalence of hidden hypoxemia in training.
 
-Pipeline for the Classification Model:<br>
+##Pipeline for the Classification Model<br>
 ![Pipeline_new](https://github.com/brooksminer/pulse-ox-correction/assets/69217005/e387815c-5223-4c55-b2de-cc5c52af731d)
-
-![image](https://github.com/brooksminer/pulse-ox-correction/assets/12636792/23613069-9ae7-4752-a936-fc221c36c84a)
 
 # Dependencies
 Running the code requires the following Python packages: 
