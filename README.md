@@ -47,7 +47,8 @@ XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
 
 
 # Data Access
-The data is publically available from [PhysioNet](https://physionet.org/). We have not provided the data here because accessing the data requires completion of online CITI training modules.
+The data is publically available from [PhysioNet](https://physionet.org/). We have not provided the data here because accessing the data requires completion of online CITI training modules.<br>
+
 You can find information about completing training and then accessing the data at the bottom of the data access page: [PhysioNet pulse oximetry correction dataset](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/).
 
 # Applying the Classifier
