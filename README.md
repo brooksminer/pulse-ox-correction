@@ -41,7 +41,10 @@ Running the code requires the following Python packages:
 XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
 ```
 # Interfacing with Models and Data Analyses
-Exploratory data analysis is located in EDA folder, in the [`EDA_Oximetry_Data_MIMIC-IV.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/EDA/EDA_Oximetry_Data_MIMIC-IV.ipynb) notebook. The notebook for creating the classifier can be found under Notebooks in [`Classifier_Undersampling.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/Notebooks/Classifier_Undersampling.ipynb). The Regression Model can be generated using the [`SaO2_Regression_Model.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/Notebooks/SaO2_Regression_Model.ipynb) file under the Notebooks folder. 
+- Exploratory data analysis: [`EDA_Oximetry_Data_MIMIC-IV.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/EDA/EDA_Oximetry_Data_MIMIC-IV.ipynb)
+- $SaO2$ Regression Model: [`SaO2_Regression_Model.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/Notebooks/SaO2_Regression_Model.ipynb) file under the Notebooks folder. 
+- Hidden Hypoxemia Classifier: [`Classifier_Undersampling.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/Notebooks/Classifier_Undersampling.ipynb)
+
 
 # Data Usage
 The data is publically available through [PhysioNet](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/). Accessing the data requires completing the CITI Data training, information for which can be found at the bottom of the linked page. 
