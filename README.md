@@ -46,8 +46,8 @@ XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib
 - Hidden Hypoxemia Classifier: [`Classifier_Undersampling.ipynb`](https://github.com/brooksminer/pulse-ox-correction/blob/main/Notebooks/Classifier_Undersampling.ipynb)
 
 
-# Data Usage
-The data is publically available through [PhysioNet](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/). Accessing the data requires completing the CITI Data training, information for which can be found at the bottom of the linked page. 
+# Data Access
+The data is publically available from [PhysioNet](https://physionet.org/). Accessing the data requires completing CITI Data training modules; you can find information about this at the bottom of the data access page: [PhysioNet pulse oximetry correction dataset](https://physionet.org/content/mit-critical-datathon-2023/1.0.0/)
 
 # Applying the Classifier
 We've deployed a [web app](https://huggingface.co/spaces/zonova/pulse_ox) showcasing a minimal feature version of our model. 
